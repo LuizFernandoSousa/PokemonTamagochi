@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bLIDrz2ZMJaxSwXMk4nFE6q2LgpMDG+wMN9eQRxepIWGzvhajWMmbl9J0yKM+16B5eHJXn+ohmbUDBQHKvpvsA==",
+  "dgSpecHash": "gBQmeDvoFBVGvCyyu4NFzy+SqSsziKG0dkYTy9i8lhscOxWzU0eK2m4dn/vsEYzSsQS+bNpNaUAeu9LAN+8FVg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Luiz\\source\\repos\\Projects\\Tamagochi\\Tamagochi\\Tamagochi.csproj",
+  "projectFilePath": "C:\\Users\\Luiz\\Documents\\GitHub\\Projects\\Tamagochi\\Tamagochi\\Tamagochi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Luiz\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\Luiz\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

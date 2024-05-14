@@ -1,10 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Luiz\\source\\repos\\Projects\\Tamagochi\\",
+  "WorkspaceRootPath": "C:\\Users\\Luiz\\Documents\\GitHub\\Projects\\Tamagochi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C7713C1E-2AE2-48F0-B6AF-15DAB49595BC}|Tamagochi\\Tamagochi.csproj|c:\\users\\luiz\\source\\repos\\projects\\tamagochi\\tamagochi\\controllers\\pokemoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C7713C1E-2AE2-48F0-B6AF-15DAB49595BC}|Tamagochi\\Tamagochi.csproj|c:\\users\\luiz\\documents\\github\\projects\\tamagochi\\tamagochi\\view\\menupokemons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7713C1E-2AE2-48F0-B6AF-15DAB49595BC}|Tamagochi\\Tamagochi.csproj|solutionrelative:tamagochi\\view\\menupokemons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7713C1E-2AE2-48F0-B6AF-15DAB49595BC}|Tamagochi\\Tamagochi.csproj|c:\\users\\luiz\\documents\\github\\projects\\tamagochi\\tamagochi\\connections\\pokemoncontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7713C1E-2AE2-48F0-B6AF-15DAB49595BC}|Tamagochi\\Tamagochi.csproj|solutionrelative:tamagochi\\connections\\pokemoncontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7713C1E-2AE2-48F0-B6AF-15DAB49595BC}|Tamagochi\\Tamagochi.csproj|c:\\users\\luiz\\documents\\github\\projects\\tamagochi\\tamagochi\\controllers\\pokemoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C7713C1E-2AE2-48F0-B6AF-15DAB49595BC}|Tamagochi\\Tamagochi.csproj|solutionrelative:tamagochi\\controllers\\pokemoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7713C1E-2AE2-48F0-B6AF-15DAB49595BC}|Tamagochi\\Tamagochi.csproj|c:\\users\\luiz\\documents\\github\\projects\\tamagochi\\tamagochi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7713C1E-2AE2-48F0-B6AF-15DAB49595BC}|Tamagochi\\Tamagochi.csproj|solutionrelative:tamagochi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,20 +33,55 @@
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PokemonContext.cs",
+              "DocumentMoniker": "C:\\Users\\Luiz\\Documents\\GitHub\\Projects\\Tamagochi\\Tamagochi\\Connections\\PokemonContext.cs",
+              "RelativeDocumentMoniker": "Tamagochi\\Connections\\PokemonContext.cs",
+              "ToolTip": "C:\\Users\\Luiz\\Documents\\GitHub\\Projects\\Tamagochi\\Tamagochi\\Connections\\PokemonContext.cs",
+              "RelativeToolTip": "Tamagochi\\Connections\\PokemonContext.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAApwBkAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T19:40:28.002Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PokemonController.cs",
-              "DocumentMoniker": "C:\\Users\\Luiz\\source\\repos\\Projects\\Tamagochi\\Tamagochi\\Controllers\\PokemonController.cs",
-              "RelativeDocumentMoniker": "Tamagochi\\Controllers\\PokemonController.cs",
-              "ToolTip": "C:\\Users\\Luiz\\source\\repos\\Projects\\Tamagochi\\Tamagochi\\Controllers\\PokemonController.cs",
-              "RelativeToolTip": "Tamagochi\\Controllers\\PokemonController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Title": "MenuPokemons.cs",
+              "DocumentMoniker": "C:\\Users\\Luiz\\Documents\\GitHub\\Projects\\Tamagochi\\Tamagochi\\View\\MenuPokemons.cs",
+              "RelativeDocumentMoniker": "Tamagochi\\View\\MenuPokemons.cs",
+              "ToolTip": "C:\\Users\\Luiz\\Documents\\GitHub\\Projects\\Tamagochi\\Tamagochi\\View\\MenuPokemons.cs",
+              "RelativeToolTip": "Tamagochi\\View\\MenuPokemons.cs",
+              "ViewState": "AQIAAF8AAAAAAAAAAAAuwIYAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T18:14:21.175Z",
+              "WhenOpened": "2024-05-13T19:38:35.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PokemonController.cs",
+              "DocumentMoniker": "C:\\Users\\Luiz\\Documents\\GitHub\\Projects\\Tamagochi\\Tamagochi\\Controllers\\PokemonController.cs",
+              "RelativeDocumentMoniker": "Tamagochi\\Controllers\\PokemonController.cs",
+              "ToolTip": "C:\\Users\\Luiz\\Documents\\GitHub\\Projects\\Tamagochi\\Tamagochi\\Controllers\\PokemonController.cs",
+              "RelativeToolTip": "Tamagochi\\Controllers\\PokemonController.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAmwDAAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T19:38:22.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Luiz\\Documents\\GitHub\\Projects\\Tamagochi\\Tamagochi\\Program.cs",
+              "RelativeDocumentMoniker": "Tamagochi\\Program.cs",
+              "ToolTip": "C:\\Users\\Luiz\\Documents\\GitHub\\Projects\\Tamagochi\\Tamagochi\\Program.cs",
+              "RelativeToolTip": "Tamagochi\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T19:32:33.111Z",
               "EditorCaption": ""
             }
           ]

@@ -23,9 +23,9 @@ namespace Tamagochi.Data
 
         public DetailsResultPokemons GetDetailsOfPokemons(ResultsPokemon pokemon)
         {
-            var client = new RestClient($"https://pokeapi.co/api/v2/pokemon{pokemon.Name}");
+            var client = new RestClient($"https://pokeapi.co/api/v2/pokemon/{pokemon.Name}");
             var request = new RestRequest("",Method.Get);
-            var response = client.Get(request);
+            var response = client.Execute(request);
 
 
             return JsonConvert.DeserializeObject<DetailsResultPokemons>(response.Content);

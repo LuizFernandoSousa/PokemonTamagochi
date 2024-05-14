@@ -85,7 +85,7 @@ namespace Tamagochi.View
         }
 
         //You get the response of user about to adopt a pokemon
-        public bool ComfirmationOfAdopt()
+        public bool ConfirmationOfAdopt()
         {
             Console.WriteLine("------------------");
             Console.WriteLine("Do you want adopt this Pokemon? (s/n)");
@@ -132,7 +132,7 @@ namespace Tamagochi.View
                 Console.WriteLine("Invalid choose!");
 
             }
-            return choose = -1;
+            return choose -1;
 
         }
 
