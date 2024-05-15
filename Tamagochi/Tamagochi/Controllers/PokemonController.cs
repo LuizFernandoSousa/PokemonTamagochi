@@ -1,4 +1,6 @@
-﻿using Tamagochi.Data;
+﻿using AutoMapper;
+using Tamagochi.Connections;
+using Tamagochi.Data;
 using Tamagochi.Model;
 using Tamagochi.View;
 
@@ -12,8 +14,17 @@ namespace Tamagochi.Controllers
 
         private List<PokemonsInfomation> pokemonsAdoption { get; set; }
 
+        IMapper mapper { get; set; }
+
         public PokemonController()
         {
+            var config = new MapperConfiguration(
+                cfg => { cfg.AddProfile<AutoMapperPokemons>();
+            });
+
+            mapper = config.CreateMapper();
+
+
             menu = new MenuPokemons();
             pokemonConnection = new PokemonContext();
             pokemonsAvailable = pokemonConnection.AllPokemonGet();
@@ -77,7 +88,8 @@ namespace Tamagochi.Controllers
                         if (pokemonsAdoption.Count == 0) 
                         {
 
-                            Console.WriteLine("You don't adopt any Pokemon"); 
+                            Console.WriteLine("You don't adopt any Pokemon");
+                            break;
 
                         }
                         Console.WriteLine("Choose a Pokemon to interact");
@@ -85,11 +97,12 @@ namespace Tamagochi.Controllers
                         {
                             Console.WriteLine($"{i + 1} - {pokemonsAdoption[i].Name}");
                         }
+                        Console.WriteLine($"Which Pokemon you want interactive? (1 to {pokemonsAdoption.Count}");
                         int numberOfPokemon = menu.PlayerChoose(pokemonsAdoption.Count)-1;
                         PokemonsInfomation pokemonSelected = pokemonsAdoption[numberOfPokemon];
 
                         int optInteract = 0;
-                        while (optInteract != 4)
+                        while (optInteract != 6)
                         {
                             menu.MenuWhatToDoWithYourPokemon(pokemonsAdoption[numberOfPokemon]);
                             optInteract = menu.PlayerChoose(6);
@@ -114,19 +127,24 @@ namespace Tamagochi.Controllers
                                 case 6:
                                     break;
                             }
-                        }
+                        }// End of "While" the interactive
                         break;
 
                     case 3:
                         menu.ShowYourPokemonsAdopting(pokemonsAdoption);
                         break;
+
+
+
                     case 4:
+                        Console.WriteLine("-----------------------------------");
                         Console.WriteLine("Thanks to play this game!!");
+                        Console.WriteLine("-----------------------------------");
                         return;
 
 
                 }      
-            }
+            }//End of the "While" for everything
         }
     }
 }

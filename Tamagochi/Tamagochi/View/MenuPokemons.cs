@@ -9,11 +9,13 @@ namespace Tamagochi.View
         public void MenuWelcome()
         {
             Console.WriteLine("-----------------------------------");
-            Console.WriteLine("WELCOME TO TAMAGOCHI WITH POKEMON");
+            Console.WriteLine(" WELCOME TO TAMAGOCHI WITH POKEMON ");
             Console.WriteLine("-----------------------------------");
             Console.WriteLine("What is you name?");
             nameofPlayer = Console.ReadLine();
+            Console.WriteLine("-----------------------------------");
             Console.WriteLine("Nice! "+nameofPlayer+" Let's start!!");
+            
         }
 
 
@@ -21,12 +23,14 @@ namespace Tamagochi.View
         public void MainMenu()
         {
             Console.WriteLine("-----------------------------------");
-            Console.WriteLine("Main Menu");
+            Console.WriteLine("============ Main Menu ============");
             Console.WriteLine("-----------------------------------");
             Console.WriteLine("What do you whant to do?");
             Console.WriteLine("1 - Adopt a Pokemon");
-            Console.WriteLine("2 - See your Pokemons");
-            Console.WriteLine("3 - Exit");
+            Console.WriteLine("2 - Interact with your Pokemons");
+            Console.WriteLine("3 - See your Pokemons adotp");
+            Console.WriteLine("4 - Exit");
+            Console.WriteLine("-----------------------------------");
             Console.WriteLine("What is your choose?");
         }
 
@@ -35,13 +39,14 @@ namespace Tamagochi.View
         public int PlayerChoose(int maxOpt)
         {
             int playChoose;
-
+            Console.WriteLine("-----------------------------------");
             while (!Int32.TryParse(Console.ReadLine(), out playChoose) || playChoose < 1 || playChoose > maxOpt)
             {
 
                 Console.WriteLine($"Invalid data! Write between numbers 1 and {maxOpt}!");  
 
             }
+            Console.WriteLine("-----------------------------------");
             return playChoose;
         }
 
@@ -54,19 +59,21 @@ namespace Tamagochi.View
             Console.WriteLine("2 - See details of pokemon");
             Console.WriteLine("3 - Adopt a Pokemon");
             Console.WriteLine("4 - Back to main menu");
-            Console.Write("Choose you option: ");
+            Console.WriteLine("-----------------------------------");
+            Console.WriteLine("Choose you option: ");
         }
 
         //Can see the pokemons available to adopt
         public void ShowPokemonsAvailable(List<ResultsPokemon> pokemonsAvailable)
         {
-            Console.WriteLine("------------------------");
+            Console.WriteLine("-----------------------------------");
             Console.WriteLine("See the options of pokemons");
             for (int i = 0; i < pokemonsAvailable.Count; i++) 
             {
                 Console.WriteLine((i+1)+ ": "+ pokemonsAvailable[i].Name);
 
             }
+           
         }
 
 
@@ -74,7 +81,7 @@ namespace Tamagochi.View
         public void ShowDetailsOfPokomens(DetailsResultPokemons details)
         {
 
-            Console.WriteLine("-----------------------");
+            Console.WriteLine("-----------------------------------");
             Console.WriteLine("Details of Pokemon:");
             Console.WriteLine("Name: " + details.Name);
             Console.WriteLine("Height: " + details.Height);
@@ -84,13 +91,14 @@ namespace Tamagochi.View
             {
                 Console.WriteLine("- " + ability.Ability.Name);
             }
+            
 
         }
 
         //You get the response of user about to adopt a pokemon
         public bool ConfirmationOfAdopt()
         {
-            Console.WriteLine("------------------");
+            Console.WriteLine("-----------------------------------");
             Console.WriteLine("Do you want adopt this Pokemon? (s/n)");
             string choose = Console.ReadLine();
 
@@ -100,11 +108,12 @@ namespace Tamagochi.View
 
         public void ShowYourPokemonsAdopting(List<PokemonsInfomation> pokemonAdopting)
         {
-            Console.WriteLine("----------------------------");
+            Console.WriteLine("-----------------------------------");
             Console.WriteLine("Yours Pokemons: ");
 
             if (pokemonAdopting.Count == 0)
             {
+                Console.WriteLine("-----------------------------------");
                 Console.WriteLine("You don't adopt any Pokemon");
             }
             else
@@ -117,12 +126,13 @@ namespace Tamagochi.View
                 }
             }
 
+
         }
 
 
         public int GetChooseOfPokemon(List<ResultsPokemon> pokemons)
         {
-            Console.WriteLine("-------------------");
+            Console.WriteLine("-----------------------------------");
             int choose;
 
             while (true)
@@ -141,7 +151,7 @@ namespace Tamagochi.View
 
         public int GetChooseOfPokemonAdoption(List<DetailsResultPokemons> pokemonAdopting)
         {
-            Console.WriteLine("-------------------");
+            Console.WriteLine("-----------------------------------");
             int choose;
 
             while (true)
@@ -160,9 +170,9 @@ namespace Tamagochi.View
 
         public void MenuWhatToDoWithYourPokemon(PokemonsInfomation adoptPokemons)
         {
-            Console.WriteLine("-----------------------");
+            Console.WriteLine("-----------------------------------");
             Console.WriteLine("Menu of the interation");
-            Console.WriteLine("-----------------------");
+            Console.WriteLine("-----------------------------------");
             Console.WriteLine(nameofPlayer+" What you whant to do?");
             Console.WriteLine($"1 - How is {adoptPokemons.Name} are?");
             Console.WriteLine($"2 - Feed the {adoptPokemons.Name}!");
@@ -170,7 +180,7 @@ namespace Tamagochi.View
             Console.WriteLine($"4 - Do {adoptPokemons.Name} rest!");
             Console.WriteLine($"5 - Give affect to {adoptPokemons.Name}!");
             Console.WriteLine("6 - Come back");
-            Console.WriteLine("-----------------------");
+            Console.WriteLine("-----------------------------------");
             Console.WriteLine("Which option you want");
         }
 
