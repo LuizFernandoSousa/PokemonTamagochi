@@ -8,6 +8,7 @@
         public int Order { get; set; }
         public int Height { get; set; }
         public int Weight { get; set; }
+        
     }
 
     public class AbilityDetail

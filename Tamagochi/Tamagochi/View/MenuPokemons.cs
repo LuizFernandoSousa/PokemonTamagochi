@@ -4,6 +4,7 @@ namespace Tamagochi.View
 {
     public class MenuPokemons
     {
+        string nameofPlayer;
         //Menu that show the first thing when start the program
         public void MenuWelcome()
         {
@@ -11,8 +12,8 @@ namespace Tamagochi.View
             Console.WriteLine("WELCOME TO TAMAGOCHI WITH POKEMON");
             Console.WriteLine("-----------------------------------");
             Console.WriteLine("What is you name?");
-            string nameofPlayer = Console.ReadLine();
-            Console.WriteLine("Nice!"+nameofPlayer+" Let's play!!");
+            nameofPlayer = Console.ReadLine();
+            Console.WriteLine("Nice! "+nameofPlayer+" Let's start!!");
         }
 
 
@@ -20,7 +21,9 @@ namespace Tamagochi.View
         public void MainMenu()
         {
             Console.WriteLine("-----------------------------------");
-            Console.WriteLine("Main Menu - What do you whant to do?");
+            Console.WriteLine("Main Menu");
+            Console.WriteLine("-----------------------------------");
+            Console.WriteLine("What do you whant to do?");
             Console.WriteLine("1 - Adopt a Pokemon");
             Console.WriteLine("2 - See your Pokemons");
             Console.WriteLine("3 - Exit");
@@ -29,14 +32,14 @@ namespace Tamagochi.View
 
 
         //Get the choose from user
-        public int PlayerChoose()
+        public int PlayerChoose(int maxOpt)
         {
             int playChoose;
 
-            while (!Int32.TryParse(Console.ReadLine(), out playChoose) || playChoose < 1 || playChoose > 4)
+            while (!Int32.TryParse(Console.ReadLine(), out playChoose) || playChoose < 1 || playChoose > maxOpt)
             {
 
-                Console.WriteLine("Invalid data! Write between numbers 1 and 3!");  
+                Console.WriteLine($"Invalid data! Write between numbers 1 and {maxOpt}!");  
 
             }
             return playChoose;
@@ -95,7 +98,7 @@ namespace Tamagochi.View
         }
 
 
-        public void ShowYourPokemonsAdopting(List<DetailsResultPokemons> pokemonAdopting)
+        public void ShowYourPokemonsAdopting(List<PokemonsInfomation> pokemonAdopting)
         {
             Console.WriteLine("----------------------------");
             Console.WriteLine("Yours Pokemons: ");
@@ -135,6 +138,44 @@ namespace Tamagochi.View
             return choose -1;
 
         }
+
+        public int GetChooseOfPokemonAdoption(List<DetailsResultPokemons> pokemonAdopting)
+        {
+            Console.WriteLine("-------------------");
+            int choose;
+
+            while (true)
+            {
+                Console.Write("Choose one of this Pokemons each number (1 -" + pokemonAdopting.Count + "): ");
+                if (int.TryParse(Console.ReadLine(), out choose) && choose >= 1 && choose <= pokemonAdopting.Count)
+                {
+                    break;
+                }
+                Console.WriteLine("Invalid choose!");
+
+            }
+            return choose - 1;
+
+        }
+
+        public void MenuWhatToDoWithYourPokemon(PokemonsInfomation adoptPokemons)
+        {
+            Console.WriteLine("-----------------------");
+            Console.WriteLine("Menu of the interation");
+            Console.WriteLine("-----------------------");
+            Console.WriteLine(nameofPlayer+" What you whant to do?");
+            Console.WriteLine($"1 - How is {adoptPokemons.Name} are?");
+            Console.WriteLine($"2 - Feed the {adoptPokemons.Name}!");
+            Console.WriteLine($"3 - Play with {adoptPokemons.Name}!");
+            Console.WriteLine($"4 - Do {adoptPokemons.Name} rest!");
+            Console.WriteLine($"5 - Give affect to {adoptPokemons.Name}!");
+            Console.WriteLine("6 - Come back");
+            Console.WriteLine("-----------------------");
+            Console.WriteLine("Which option you want");
+        }
+
+
+        
 
 
 
