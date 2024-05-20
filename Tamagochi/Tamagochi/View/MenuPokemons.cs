@@ -42,8 +42,12 @@ namespace Tamagochi.View
             Console.WriteLine("-----------------------------------");
             while (!Int32.TryParse(Console.ReadLine(), out playChoose) || playChoose < 1 || playChoose > maxOpt)
             {
+                Console.Clear();
+                Console.WriteLine("-----------------------------------");
+                Console.WriteLine($"Invalid data! Write between numbers 1 and {maxOpt}!");
+                return playChoose - 1;
+                
 
-                Console.WriteLine($"Invalid data! Write between numbers 1 and {maxOpt}!");  
 
             }
             Console.WriteLine("-----------------------------------");
@@ -98,11 +102,28 @@ namespace Tamagochi.View
         //You get the response of user about to adopt a pokemon
         public bool ConfirmationOfAdopt()
         {
-            Console.WriteLine("-----------------------------------");
-            Console.WriteLine("Do you want adopt this Pokemon? (s/n)");
-            string choose = Console.ReadLine();
+            do
+            {
+                Console.WriteLine("-----------------------------------");
+                Console.WriteLine("Do you want adopt this Pokemon? (Y/N)");
+                string choose = Console.ReadLine();
+                
+                if (String.Equals("Y",choose.ToUpper()))
+                {
+                    return true;
+                    break;
+                }
+                if(string.Equals("N", choose.ToUpper()))
+                {
+                    return false;
+                }
+                else
+                {
+                    Console.WriteLine("Incorrect data! Choose between Yes or Not (Y/N)");
+                }                
 
-            return choose.ToLower() == "s";
+            } while (true);             
+            
         }
 
 
@@ -184,6 +205,7 @@ namespace Tamagochi.View
             Console.WriteLine("Which option you want");
         }
 
+       
 
         
 

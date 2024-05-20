@@ -38,41 +38,54 @@ namespace Tamagochi.Controllers
         {
             menu.MenuWelcome();
 
-            while (true)
+            do
             {
                 menu.MainMenu();
                 int choose = menu.PlayerChoose(4);
 
-                switch(choose)
+                switch (choose)
                 {
                     case 1:
-                        while (true)
+                        Console.Clear();
+                        do
                         {
                             menu.ShowMenuAdopt();
                             choose = menu.PlayerChoose(4);
-
+                            if (choose == -1)
+                            {                               
+                                menu.ShowMenuAdopt();
+                            }
                             switch (choose)
-                            { 
+                            {
                                 case 1:
+                                    Console.Clear();
                                     menu.ShowPokemonsAvailable(pokemonsAvailable);
                                     break;
                                 case 2:
+                                    Console.Clear();
                                     menu.ShowPokemonsAvailable(pokemonsAvailable);
                                     var pokemonSelect = menu.GetChooseOfPokemon(pokemonsAvailable);
+                                    Console.Clear();
                                     DetailsResultPokemons details = pokemonConnection.GetDetailsOfPokemons(pokemonsAvailable[pokemonSelect]);
                                     menu.ShowDetailsOfPokomens(details);
                                     break;
                                 case 3:
+                                    Console.Clear();
                                     menu.ShowPokemonsAvailable(pokemonsAvailable);
                                     pokemonSelect = menu.GetChooseOfPokemon(pokemonsAvailable);
                                     details = pokemonConnection.GetDetailsOfPokemons(pokemonsAvailable[pokemonSelect]);
                                     menu.ShowDetailsOfPokomens(details);
                                     if (menu.ConfirmationOfAdopt())
                                     {
-                                        var pokemon = new PokemonsInfomation();
-                                        pokemon.UpdateInformations(details);
+                                        var pokemon = mapper.Map<PokemonsInfomation>(details);
                                         pokemonsAdoption.Add(pokemon);
-                                        Console.WriteLine($"ALL RIGHT! YOU ADOPT THE {details.Name}!!!");
+                                        Console.Clear();
+                                        Console.WriteLine($"ALL RIGHT! YOU ADOPT THE {details.Name} :D !!!");
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("-----------------------------------");
+                                        Console.WriteLine("All right, you can select another pokemon :(");
                                     }
                                     break;
                                 case 4:
@@ -83,9 +96,11 @@ namespace Tamagochi.Controllers
                                 break;
                             }
                         }
+                        while (true);                        
                         break;
                     case 2:
-                        if (pokemonsAdoption.Count == 0) 
+                        Console.Clear();
+                        if (pokemonsAdoption.Count == 0)
                         {
 
                             Console.WriteLine("You don't adopt any Pokemon");
@@ -93,17 +108,18 @@ namespace Tamagochi.Controllers
 
                         }
                         Console.WriteLine("Choose a Pokemon to interact");
-                        for(int i = 0; i < pokemonsAdoption.Count; i++)
+                        for (int i = 0; i < pokemonsAdoption.Count; i++)
                         {
                             Console.WriteLine($"{i + 1} - {pokemonsAdoption[i].Name}");
                         }
                         Console.WriteLine($"Which Pokemon you want interactive? (1 to {pokemonsAdoption.Count}");
-                        int numberOfPokemon = menu.PlayerChoose(pokemonsAdoption.Count)-1;
+                        int numberOfPokemon = menu.PlayerChoose(pokemonsAdoption.Count) - 1;
                         PokemonsInfomation pokemonSelected = pokemonsAdoption[numberOfPokemon];
 
                         int optInteract = 0;
-                        while (optInteract != 6)
+                        do
                         {
+                            Console.Clear();
                             menu.MenuWhatToDoWithYourPokemon(pokemonsAdoption[numberOfPokemon]);
                             optInteract = menu.PlayerChoose(6);
 
@@ -127,7 +143,9 @@ namespace Tamagochi.Controllers
                                 case 6:
                                     break;
                             }
-                        }// End of "While" the interactive
+
+                        }
+                        while (optInteract != 6);                        
                         break;
 
                     case 3:
@@ -142,9 +160,9 @@ namespace Tamagochi.Controllers
                         Console.WriteLine("-----------------------------------");
                         return;
 
-
-                }      
-            }//End of the "While" for everything
+                }
+            }
+            while (true);           
         }
     }
 }

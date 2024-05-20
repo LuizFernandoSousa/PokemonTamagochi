@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Luiz\\Documents\\GitHub\\Projects\\Tamagochi\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C7713C1E-2AE2-48F0-B6AF-15DAB49595BC}|Tamagochi\\Tamagochi.csproj|c:\\users\\luiz\\documents\\github\\projects\\tamagochi\\tamagochi\\view\\menupokemons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7713C1E-2AE2-48F0-B6AF-15DAB49595BC}|Tamagochi\\Tamagochi.csproj|solutionrelative:tamagochi\\view\\menupokemons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C7713C1E-2AE2-48F0-B6AF-15DAB49595BC}|Tamagochi\\Tamagochi.csproj|c:\\users\\luiz\\documents\\github\\projects\\tamagochi\\tamagochi\\controllers\\pokemoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C7713C1E-2AE2-48F0-B6AF-15DAB49595BC}|Tamagochi\\Tamagochi.csproj|solutionrelative:tamagochi\\controllers\\pokemoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7713C1E-2AE2-48F0-B6AF-15DAB49595BC}|Tamagochi\\Tamagochi.csproj|c:\\users\\luiz\\documents\\github\\projects\\tamagochi\\tamagochi\\model\\pokemonsinfomation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7713C1E-2AE2-48F0-B6AF-15DAB49595BC}|Tamagochi\\Tamagochi.csproj|solutionrelative:tamagochi\\model\\pokemonsinfomation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C7713C1E-2AE2-48F0-B6AF-15DAB49595BC}|Tamagochi\\Tamagochi.csproj|c:\\users\\luiz\\documents\\github\\projects\\tamagochi\\tamagochi\\connections\\automapperpokemons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C7713C1E-2AE2-48F0-B6AF-15DAB49595BC}|Tamagochi\\Tamagochi.csproj|c:\\users\\luiz\\documents\\github\\projects\\tamagochi\\tamagochi\\model\\detailsresultpokemons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C7713C1E-2AE2-48F0-B6AF-15DAB49595BC}|Tamagochi\\Tamagochi.csproj|solutionrelative:tamagochi\\model\\detailsresultpokemons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C7713C1E-2AE2-48F0-B6AF-15DAB49595BC}|Tamagochi\\Tamagochi.csproj|c:\\users\\luiz\\documents\\github\\projects\\tamagochi\\tamagochi\\model\\pokemonsinfomation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C7713C1E-2AE2-48F0-B6AF-15DAB49595BC}|Tamagochi\\Tamagochi.csproj|solutionrelative:tamagochi\\model\\pokemonsinfomation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,19 +43,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "MenuPokemons.cs",
+              "DocumentMoniker": "C:\\Users\\Luiz\\Documents\\GitHub\\Projects\\Tamagochi\\Tamagochi\\View\\MenuPokemons.cs",
+              "RelativeDocumentMoniker": "Tamagochi\\View\\MenuPokemons.cs",
+              "ToolTip": "C:\\Users\\Luiz\\Documents\\GitHub\\Projects\\Tamagochi\\Tamagochi\\View\\MenuPokemons.cs",
+              "RelativeToolTip": "Tamagochi\\View\\MenuPokemons.cs",
+              "ViewState": "AQIAAH8AAAAAAAAAAAAYwIMAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T18:10:58.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "PokemonController.cs",
               "DocumentMoniker": "C:\\Users\\Luiz\\Documents\\GitHub\\Projects\\Tamagochi\\Tamagochi\\Controllers\\PokemonController.cs",
               "RelativeDocumentMoniker": "Tamagochi\\Controllers\\PokemonController.cs",
               "ToolTip": "C:\\Users\\Luiz\\Documents\\GitHub\\Projects\\Tamagochi\\Tamagochi\\Controllers\\PokemonController.cs",
               "RelativeToolTip": "Tamagochi\\Controllers\\PokemonController.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAQwBgAAAArAAAA",
+              "ViewState": "AQIAADgAAAAAAAAAAAAowFcAAABnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-15T20:31:36.799Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "AutoMapperPokemons.cs",
               "DocumentMoniker": "C:\\Users\\Luiz\\Documents\\GitHub\\Projects\\Tamagochi\\Tamagochi\\Connections\\AutoMapperPokemons.cs",
               "RelativeDocumentMoniker": "Tamagochi\\Connections\\AutoMapperPokemons.cs",
@@ -59,12 +76,11 @@
               "RelativeToolTip": "Tamagochi\\Connections\\AutoMapperPokemons.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAiwBsAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T20:12:17.361Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-15T20:12:17.361Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "DetailsResultPokemons.cs",
               "DocumentMoniker": "C:\\Users\\Luiz\\Documents\\GitHub\\Projects\\Tamagochi\\Tamagochi\\Model\\DetailsResultPokemons.cs",
               "RelativeDocumentMoniker": "Tamagochi\\Model\\DetailsResultPokemons.cs",
@@ -72,25 +88,23 @@
               "RelativeToolTip": "Tamagochi\\Model\\DetailsResultPokemons.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T19:59:24.91Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-15T19:59:24.91Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "PokemonsInfomation.cs",
               "DocumentMoniker": "C:\\Users\\Luiz\\Documents\\GitHub\\Projects\\Tamagochi\\Tamagochi\\Model\\PokemonsInfomation.cs",
               "RelativeDocumentMoniker": "Tamagochi\\Model\\PokemonsInfomation.cs",
               "ToolTip": "C:\\Users\\Luiz\\Documents\\GitHub\\Projects\\Tamagochi\\Tamagochi\\Model\\PokemonsInfomation.cs",
               "RelativeToolTip": "Tamagochi\\Model\\PokemonsInfomation.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFAAAAAJAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAwwA8AAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T18:30:05.935Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-15T18:30:05.935Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Luiz\\Documents\\GitHub\\Projects\\Tamagochi\\Tamagochi\\Program.cs",
               "RelativeDocumentMoniker": "Tamagochi\\Program.cs",
@@ -98,8 +112,7 @@
               "RelativeToolTip": "Tamagochi\\Program.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T19:32:33.111Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-13T19:32:33.111Z"
             }
           ]
         }

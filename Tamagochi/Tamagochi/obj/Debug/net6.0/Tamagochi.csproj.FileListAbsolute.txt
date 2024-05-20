@@ -73,3 +73,4 @@ C:\Users\Luiz\Documents\GitHub\Projects\Tamagochi\Tamagochi\obj\Debug\net6.0\ref
 C:\Users\Luiz\Documents\GitHub\Projects\Tamagochi\Tamagochi\obj\Debug\net6.0\Tamagochi.pdb
 C:\Users\Luiz\Documents\GitHub\Projects\Tamagochi\Tamagochi\obj\Debug\net6.0\Tamagochi.genruntimeconfig.cache
 C:\Users\Luiz\Documents\GitHub\Projects\Tamagochi\Tamagochi\obj\Debug\net6.0\ref\Tamagochi.dll
+C:\Users\Luiz\Documents\GitHub\Projects\Tamagochi\Tamagochi\bin\Debug\net6.0\AutoMapper.dll

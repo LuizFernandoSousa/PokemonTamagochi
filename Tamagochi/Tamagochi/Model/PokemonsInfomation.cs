@@ -23,13 +23,13 @@
 
         }
 
-        public void UpdateInformations(DetailsResultPokemons details)
-        {
-            Name = details.Name;
-            Weight = details.Weight;
-            Height = details.Height;
-            abilities = details.Abilities.Select(a => new Abilities { Name = a.Ability.Name}).ToList();
-        }
+        //public void UpdateInformations(DetailsResultPokemons details)
+        //{
+        //    Name = details.Name;
+        //    Weight = details.Weight;
+        //    Height = details.Height;
+        //    abilities = details.Abilities.Select(a => new Abilities { Name = a.Ability.Name}).ToList();
+        //}
 
         public void ToPlay()
         {
