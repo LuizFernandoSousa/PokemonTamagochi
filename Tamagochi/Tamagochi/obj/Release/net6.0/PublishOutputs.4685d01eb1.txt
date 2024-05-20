@@ -1,0 +1,17 @@
+C:\Users\Luiz\Documents\GitHub\Projects\Tamagochi\Tamagochi\obj\Release\net6.0\PubTmp\Out\Tamagochi.exe
+C:\Users\Luiz\Documents\GitHub\Projects\Tamagochi\Tamagochi\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+C:\Users\Luiz\Documents\GitHub\Projects\Tamagochi\Tamagochi\obj\Release\net6.0\PubTmp\Out\appsettings.json
+C:\Users\Luiz\Documents\GitHub\Projects\Tamagochi\Tamagochi\obj\Release\net6.0\PubTmp\Out\Tamagochi.dll
+C:\Users\Luiz\Documents\GitHub\Projects\Tamagochi\Tamagochi\obj\Release\net6.0\PubTmp\Out\Tamagochi.deps.json
+C:\Users\Luiz\Documents\GitHub\Projects\Tamagochi\Tamagochi\obj\Release\net6.0\PubTmp\Out\Tamagochi.runtimeconfig.json
+C:\Users\Luiz\Documents\GitHub\Projects\Tamagochi\Tamagochi\obj\Release\net6.0\PubTmp\Out\Tamagochi.pdb
+C:\Users\Luiz\Documents\GitHub\Projects\Tamagochi\Tamagochi\obj\Release\net6.0\PubTmp\Out\AutoMapper.dll
+C:\Users\Luiz\Documents\GitHub\Projects\Tamagochi\Tamagochi\obj\Release\net6.0\PubTmp\Out\Microsoft.OpenApi.dll
+C:\Users\Luiz\Documents\GitHub\Projects\Tamagochi\Tamagochi\obj\Release\net6.0\PubTmp\Out\Newtonsoft.Json.dll
+C:\Users\Luiz\Documents\GitHub\Projects\Tamagochi\Tamagochi\obj\Release\net6.0\PubTmp\Out\RestSharp.dll
+C:\Users\Luiz\Documents\GitHub\Projects\Tamagochi\Tamagochi\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Luiz\Documents\GitHub\Projects\Tamagochi\Tamagochi\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Luiz\Documents\GitHub\Projects\Tamagochi\Tamagochi\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Luiz\Documents\GitHub\Projects\Tamagochi\Tamagochi\obj\Release\net6.0\PubTmp\Out\System.Text.Encodings.Web.dll
+C:\Users\Luiz\Documents\GitHub\Projects\Tamagochi\Tamagochi\obj\Release\net6.0\PubTmp\Out\System.Text.Json.dll
+C:\Users\Luiz\Documents\GitHub\Projects\Tamagochi\Tamagochi\obj\Release\net6.0\PubTmp\Out\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
